@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #1f1f1f;
+  font-family: "Roboto";
+  color: #1f1f1f;
+  overflow: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.App__currencyContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0 350px;
+}
+
+.currencyBox {
+  height: 100px;
+  width: 350px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.currencyBox__Logo {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currencyBox__Name {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 900;
+}
+.currencyBox__Amount {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+.currencyBox__Stats {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.converterBox {
+  height: 300px;
+  width: 1000px;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+.converterBox__Title {
+  font-size: 34px;
+  font-weight: 300;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.converterBox__Content {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 0 100px;
+}
+.converterBox__FromButtons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+.converterBox__Stats {
+  margin-top: 10px;
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.converterBox__Information {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+a {
+  color: #5a5cee;
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover {
+  color: #494bc5;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+input {
+  padding: 7px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px #1f1f1f solid;
+}
+
+select {
+  padding: 7px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px #1f1f1f solid;
+}
+
+#Change {
+  border-radius: 99px;
+  border: 1px #1f1f1f solid;
+  padding: 5px;
+  background-color: #fafafa;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#Change:hover {
+  background-color: #e0e0e0;
+}
+
+#Submit {
+  padding: 7px;
+  width: 100px;
+  font-size: 16px;
+  background-color: #fafafa;
+  border: 1px #1f1f1f solid;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#Submit:hover {
+  background-color: #e0e0e0;
+  transition: 0s;
+}
+
+#Info {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
+
+@media only screen and (max-width: 1669px) {
+  .App__currencyContent {
+    padding: 0 0px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .converterBox {
+    width: 850px;
+  }
+  .converterBox__Content {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .converterBox {
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+  }
+  .converterBox__Title {
+    height: 10%;
+  }
+  .converterBox__Content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+  }
+  .converterBox__FromButtons {
+    flex-direction: column;
+  }
+  .converterBox__Stats {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 30%;
+    width: 100%;
+  }
+  .converterBox__Information {
+    font-size: 16px;
+    height: 15px;
+  }
+  body {
+    overflow-y: scroll;
+  }
+}/*# sourceMappingURL=index.css.map */

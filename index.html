@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>currencyCalculator - BETA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/css/index.css" />
+  </head>
+  <body>
+    <div class="App">
+      <div class="App__currencyContent">
+        <div class="currencyBox">
+          <div class="currencyBox__Logo">
+            <iconify-icon
+              inline
+              icon="cryptocurrency:usd"
+              style="color: #fd4242"
+              width="64"
+              height="64"
+            ></iconify-icon>
+          </div>
+          <div class="currencyBox__Name">USD</div>
+          <div class="currencyBox__Amount">4.54PLN</div>
+          <div class="currencyBox__Stats">
+            <iconify-icon
+              inline
+              icon="mdi:arrow-up-bold"
+              style="color: #fd4242"
+              width="48"
+              height="48"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+        </div>
+
+        <div class="currencyBox">
+          <div class="currencyBox__Logo">
+            <iconify-icon
+              inline
+              icon="cryptocurrency:usd"
+              style="color: #fd4242"
+              width="64"
+              height="64"
+            ></iconify-icon>
+          </div>
+          <div class="currencyBox__Name">EUR</div>
+          <div class="currencyBox__Amount">4.70PLN</div>
+          <div class="currencyBox__Stats">
+            <iconify-icon
+              inline
+              icon="mdi:arrow-up-bold"
+              style="color: #fd4242"
+              width="48"
+              height="48"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+        </div>
+
+        <div class="currencyBox">
+          <div class="currencyBox__Logo">
+            <iconify-icon
+              inline
+              icon="cryptocurrency:usd"
+              style="color: #fd4242"
+              width="64"
+              height="64"
+            ></iconify-icon>
+          </div>
+          <div class="currencyBox__Name">GBP</div>
+          <div class="currencyBox__Amount">5.46PLN</div>
+          <div class="currencyBox__Stats">
+            <iconify-icon
+              inline
+              icon="mdi:arrow-up-bold"
+              style="color: #5ed235"
+              width="48"
+              height="48"
+            ></iconify-icon>
+          </div>
+        </div>
+
+        <div class="currencyBox">
+          <div class="currencyBox__Logo">
+            <iconify-icon
+              inline
+              icon="cryptocurrency:usd"
+              style="color: #fd4242"
+              width="64"
+              height="64"
+            ></iconify-icon>
+          </div>
+          <div class="currencyBox__Name">BAT</div>
+          <div class="currencyBox__Amount">0.13PLN</div>
+          <div class="currencyBox__Stats">
+            <iconify-icon
+              inline
+              icon="mdi:arrow-up-bold"
+              style="color: #fd4242"
+              width="48"
+              height="48"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+        </div>
+
+        <div class="currencyBox">
+          <div class="currencyBox__Logo">
+            <iconify-icon
+              inline
+              icon="cryptocurrency:usd"
+              style="color: #fd4242"
+              width="64"
+              height="64"
+            ></iconify-icon>
+          </div>
+          <div class="currencyBox__Name">SEK</div>
+          <div class="currencyBox__Amount">0.43PLN</div>
+          <div class="currencyBox__Stats">
+            <iconify-icon
+              inline
+              icon="mdi:arrow-up-bold"
+              style="color: #5ed235"
+              width="48"
+              height="48"
+            ></iconify-icon>
+          </div>
+        </div>
+
+        <div class="currencyBox">
+          <div class="currencyBox__Logo">
+            <iconify-icon
+              inline
+              icon="cryptocurrency:usd"
+              style="color: #fd4242"
+              width="64"
+              height="64"
+            ></iconify-icon>
+          </div>
+          <div class="currencyBox__Name">TRY</div>
+          <div class="currencyBox__Amount">0.24PLN</div>
+          <div class="currencyBox__Stats">
+            <iconify-icon
+              inline
+              icon="mdi:arrow-up-bold"
+              style="color: #fd4242"
+              width="48"
+              height="48"
+              flip="vertical"
+            ></iconify-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="App__converterApp">
+        <div class="converterBox">
+          <div class="converterBox__Title">currencyConverter</div>
+          <div class="converterBox__Content">
+            <div class="converterBox__Amount">
+              <label for="amount">
+                Amount <br />
+                <input
+                  type="number"
+                  value="0"
+                  max="999999"
+                  name="amount"
+                  id="amount"
+                />
+              </label>
+            </div>
+            <div class="converterBox__FromButtons">
+              <div class="converterBox__From">
+                <label for="from2">
+                  From <br />
+                  <select name="currencyz" id="currencyz">
+                    <optgroup label="Dostępne waluty">
+                      <option value="PLN">PLN</option>
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="BAT">BAT</option>
+                      <option value="SEK">SEK</option>
+                      <option value="TRY">TRY</option>
+                    </optgroup>
+                  </select>
+                </label>
+              </div>
+              <div class="converterBox__Button">
+                <button id="Change">
+                  <iconify-icon
+                    inline
+                    icon="tabler:arrows-exchange"
+                    width="30"
+                    height="30"
+                  ></iconify-icon>
+                </button>
+              </div>
+              <div class="converterBox__From">
+                <label for="from2">
+                  To <br />
+                  <select name="currencyx" id="currencyx">
+                    <optgroup label="Dostępne waluty">
+                      <option value="PLN">PLN</option>
+                      <option value="USD">USD</option>
+                      <option value="EUR">EUR</option>
+                      <option value="GBP">GBP</option>
+                      <option value="BAT">BAT</option>
+                      <option value="SEK">SEK</option>
+                      <option value="TRY">TRY</option>
+                    </optgroup>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="converterBox__Stats">
+            <div class="converterBox__Submit">
+              <button id="Submit">Convert</button>
+            </div>
+            <div class="converterBox__Info">
+              <span id="Info"
+                >??? PLN = <br />
+                ??? EUR</span
+              >
+            </div>
+          </div>
+          <div class="converterBox__Information">
+            <p>
+              Github:
+              <a href="https://github.com/zthoo/currencyCalculator"
+                >currencyCalculator</a
+              >
+              - Created by <a href="https://github.com/zthoo">ztho</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  </body>
+</html>

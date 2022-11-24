@@ -6,7 +6,7 @@
 </p>
 <li> 
     Preview link:
-    <a href="https://zthoo.github.io/currencyConverter">
+    <a href="https://currency-ztho.netlify.app/">
         currencyConverter 😎
     </a> 
 </li>
